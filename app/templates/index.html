@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="center">
+        {{ form.email.label }}
+        {{ form.email(placeholder=_('user@example.com')) }}
+
+        <p>{{ _('Hello world!') }}</p>
+        <p>{{ _('Lets all be unique together until we realise we are all the same.') }}</p>
+        <p>{{ _('Two more days and all his problems would be solved.') }}</p>
+        <p>{{ _('Excitement replaced fear until the final moment.') }}</p>
+        <p>{{ _('Malls are great places to shop; I can find everything I need under one roof.') }}</p>
+        <p>{{ _('Bye!') }}</p>
+
+        {% for language in AVAILABLE_LANGUAGES.items() %}
+            {% if CURRENT_LANGUAGE == language[0] %}
+                {{ language[1] }}
+            {% else %}
+                <a href="{{ url_for('set_language', language=language[0]) }}" >{{ language[1] }}</a>
+            {%  endif %}
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

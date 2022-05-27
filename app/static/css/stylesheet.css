@@ -1,0 +1,25 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  background: #efefef;
+  overflow: hidden;
+}
+
+input {
+  padding: 5px;
+  border: none;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
