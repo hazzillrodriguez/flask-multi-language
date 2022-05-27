@@ -4,7 +4,7 @@
 
 ![Flask Multi-language](demo/demo.gif)
 
-Implement internationalization (i18n) and localization (l10n) support in your Flask application by adding your own translations, language support and allow users to pick between languages using the language option switcher.
+Implement internationalization (i18n) and localization (l10n) support in your Flask application by adding your own translations, language support, and allow users to swap between languages using the language option switcher.
 
 ## Built With
 
